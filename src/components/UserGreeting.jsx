@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 //Conditional rendering//
 const UserGreeting = (props) => {
@@ -9,4 +10,8 @@ const UserGreeting = (props) => {
   }
 };
 
+UserGreeting.propTypes = {
+  isLoggedin: PropTypes.bool,
+  userName: PropTypes.string,
+};
 export default UserGreeting;
