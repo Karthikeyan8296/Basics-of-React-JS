@@ -5,6 +5,7 @@ import { title } from "./components/Header";
 import Card from "./components/Card";
 import Button from "./components/Button";
 import UserGreeting from "./components/UserGreeting";
+import List from "./components/List";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Card />
       <Button />
       <UserGreeting isLoggedin={false} userName="Karthik" />
+      <List/>
     </>
   );
 }
