@@ -1,27 +1,37 @@
 import React from "react";
+import PropTypes from "prop-types";
 
-const ArrayIntoObjects = () => {
-  const fruits = [
-    { id: 1, name: "red", calories: 50 },
-    { id: 2, name: "yellow", calories: 20 },
-    { id: 3, name: "orange", calories: 15 },
-    { id: 4, name: "mango", calories: 24 },
-    { id: 5, name: "pineapple", calories: 58 },
-    { id: 6, name: "banana", calories: 45 },
-  ];
+const ArrayIntoObjects = (props) => {
+  const itemList = props.items; //Calling that Array of objects
+  const category = props.category;
 
-  fruits.sort((a, b) => a.name.localeCompare(b.name)); //ALPHABETICAL ORDER//
-
-  const lowCalFruit = fruits.filter((value) => value.calories < 30); //FILTERING
+  itemList.sort((a, b) => a.name.localeCompare(b.name)); //ALPHABETICAL ORDER//
+  const lowCalFruit = itemList.filter((value) => value.calories < 30); //FILTERING
 
   //key - each object name should be diff//
-  const ListItems = lowCalFruit.map((value) => (
+  const ListItems = itemList.map((value) => (
     <li key={value.id}>
       {value.name} : &nbsp; <b>{value.calories}</b>
     </li>
   ));
 
-  return <ol>{ListItems}</ol>;
+  return (
+    <>
+      <h3>{category}</h3> <ol>{ListItems}</ol>
+    </>
+  );
+};
+
+//User-difined Types//
+ArrayIntoObjects.propTypes = {
+  category: PropTypes.string,
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number,
+      name: PropTypes.string,
+      calories: PropTypes.number,
+    })
+  ),
 };
 
 export default ArrayIntoObjects;

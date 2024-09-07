@@ -9,6 +9,15 @@ import List from "./components/List";
 import ArrayIntoObjects from "./components/ArrayIntoObjects";
 
 function App() {
+  const fruits = [
+    { id: 1, name: "red", calories: 50 },
+    { id: 2, name: "yellow", calories: 20 },
+    { id: 3, name: "orange", calories: 15 },
+    { id: 4, name: "mango", calories: 24 },
+    { id: 5, name: "pineapple", calories: 58 },
+    { id: 6, name: "banana", calories: 45 },
+  ];
+
   return (
     <>
       <Card
@@ -21,9 +30,9 @@ function App() {
       <Card />
       <Button />
       <UserGreeting isLoggedin={false} userName="Karthik" />
-      
+
       {/* <List/> */}
-      <ArrayIntoObjects/>
+      <ArrayIntoObjects items = {fruits}  category="fruits :"/>
     </>
   );
 }
