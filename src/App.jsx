@@ -10,6 +10,7 @@ import ArrayIntoObjects from "./components/ArrayIntoObjects";
 import ProfilePicture from "./components/ProfilePicture";
 import UseStateComponent from "./components/UseStateComponent";
 import Counter from "./components/Counter";
+import OnChangeComponent from "./components/OnChangeComponent";
 
 function App() {
   const fruits = [
@@ -41,6 +42,7 @@ function App() {
       <UseStateComponent></UseStateComponent>
 
       <Counter></Counter>
+      <OnChangeComponent></OnChangeComponent>
     </>
   );
 }
