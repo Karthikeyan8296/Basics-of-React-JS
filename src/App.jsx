@@ -8,6 +8,7 @@ import UserGreeting from "./components/UserGreeting";
 import List from "./components/List";
 import ArrayIntoObjects from "./components/ArrayIntoObjects";
 import ProfilePicture from "./components/ProfilePicture";
+import UseStateComponent from "./components/UseStateComponent";
 
 function App() {
   const fruits = [
@@ -36,6 +37,7 @@ function App() {
       <ArrayIntoObjects items = {fruits}  category="fruits :"/>
 
       <ProfilePicture></ProfilePicture>
+      <UseStateComponent></UseStateComponent>
     </>
   );
 }
