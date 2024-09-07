@@ -7,6 +7,7 @@ import Button from "./components/Button";
 import UserGreeting from "./components/UserGreeting";
 import List from "./components/List";
 import ArrayIntoObjects from "./components/ArrayIntoObjects";
+import ProfilePicture from "./components/ProfilePicture";
 
 function App() {
   const fruits = [
@@ -33,6 +34,8 @@ function App() {
 
       {/* <List/> */}
       <ArrayIntoObjects items = {fruits}  category="fruits :"/>
+
+      <ProfilePicture></ProfilePicture>
     </>
   );
 }
