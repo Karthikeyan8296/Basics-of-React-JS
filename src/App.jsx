@@ -6,6 +6,7 @@ import Card from "./components/Card";
 import Button from "./components/Button";
 import UserGreeting from "./components/UserGreeting";
 import List from "./components/List";
+import ArrayIntoObjects from "./components/ArrayIntoObjects";
 
 function App() {
   return (
@@ -20,7 +21,9 @@ function App() {
       <Card />
       <Button />
       <UserGreeting isLoggedin={false} userName="Karthik" />
-      <List/>
+      
+      {/* <List/> */}
+      <ArrayIntoObjects/>
     </>
   );
 }
