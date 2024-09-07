@@ -9,6 +9,7 @@ import List from "./components/List";
 import ArrayIntoObjects from "./components/ArrayIntoObjects";
 import ProfilePicture from "./components/ProfilePicture";
 import UseStateComponent from "./components/UseStateComponent";
+import Counter from "./components/Counter";
 
 function App() {
   const fruits = [
@@ -34,10 +35,12 @@ function App() {
       <UserGreeting isLoggedin={false} userName="Karthik" />
 
       {/* <List/> */}
-      <ArrayIntoObjects items = {fruits}  category="fruits :"/>
+      <ArrayIntoObjects items={fruits} category="fruits :" />
 
       <ProfilePicture></ProfilePicture>
       <UseStateComponent></UseStateComponent>
+
+      <Counter></Counter>
     </>
   );
 }
