@@ -19,6 +19,7 @@ import UpdateArrayObjects from "./components/UpdateArrayObjects";
 import TodoApp from "./components/TodoApp";
 import UseEffectHook from "./components/UseEffectHook";
 import ResponsiveUseEffect from "./components/ResponsiveUseEffect";
+import ComponentA from "./components/UseContextComp/ComponentA";
 
 function App() {
   const fruits = [
@@ -67,6 +68,8 @@ function App() {
       <UseEffectHook />
 
       <ResponsiveUseEffect />
+
+      <ComponentA />
     </>
   );
 }
