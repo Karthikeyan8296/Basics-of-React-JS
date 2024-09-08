@@ -20,6 +20,7 @@ import TodoApp from "./components/TodoApp";
 import UseEffectHook from "./components/UseEffectHook";
 import ResponsiveUseEffect from "./components/ResponsiveUseEffect";
 import ComponentA from "./components/UseContextComp/ComponentA";
+import UseRef from "./components/UseRef";
 
 function App() {
   const fruits = [
@@ -70,6 +71,8 @@ function App() {
       <ResponsiveUseEffect />
 
       <ComponentA />
+
+      <UseRef/>
     </>
   );
 }
