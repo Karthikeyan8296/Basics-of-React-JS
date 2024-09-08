@@ -13,6 +13,7 @@ import Counter from "./components/Counter";
 import OnChangeComponent from "./components/OnChangeComponent";
 import ColorPicker from "./components/ColorPicker";
 import CounterUpdater from "./components/CounterUpdater";
+import UpdateObjects from "./components/UpdateObjects";
 
 function App() {
   const fruits = [
@@ -49,6 +50,8 @@ function App() {
       <ColorPicker />
 
       <CounterUpdater />
+
+      <UpdateObjects />
     </>
   );
 }
