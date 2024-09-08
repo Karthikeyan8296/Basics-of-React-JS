@@ -17,6 +17,7 @@ import UpdateObjects from "./components/UpdateObjects";
 import UpdateStateArray from "./components/UpdateStateArray";
 import UpdateArrayObjects from "./components/UpdateArrayObjects";
 import TodoApp from "./components/TodoApp";
+import UseEffectHook from "./components/UseEffectHook";
 
 function App() {
   const fruits = [
@@ -61,6 +62,8 @@ function App() {
       <UpdateArrayObjects />
 
       <TodoApp />
+
+      <UseEffectHook />
     </>
   );
 }
