@@ -16,6 +16,7 @@ import CounterUpdater from "./components/CounterUpdater";
 import UpdateObjects from "./components/UpdateObjects";
 import UpdateStateArray from "./components/UpdateStateArray";
 import UpdateArrayObjects from "./components/UpdateArrayObjects";
+import TodoApp from "./components/TodoApp";
 
 function App() {
   const fruits = [
@@ -58,6 +59,8 @@ function App() {
       <UpdateStateArray />
 
       <UpdateArrayObjects />
+
+      <TodoApp />
     </>
   );
 }
